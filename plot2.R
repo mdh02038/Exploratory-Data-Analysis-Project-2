@@ -10,7 +10,7 @@ NEI <- readRDS(paste(path,"summarySCC_PM25.rds",sep="/"))
 SCC <- readRDS(paste(path,"Source_Classification_Code.rds",sep="/"))
 
 ## select rows for Baltimore City, Maryland (fips=="24510")
-select = NEI$fips=="24510"
+select <- NEI$fips=="24510"
 NEI_filtered <- NEI[select,]
 
 ## create data frame with summary of Emissions by year
